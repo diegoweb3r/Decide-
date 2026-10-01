@@ -4,9 +4,11 @@ import Header from './components/Header'
 
 import { useState } from 'react'
 import OptionList from './components/OptionList'
+import ActionButtons from './components/ActionButtons'
 
 function App() {
   const [options, setOptions] = useState([])
+  const [sorted, setSorted] = useState("");
 
   return (
     <>
@@ -19,6 +21,14 @@ function App() {
         setOptions([...options, option])}}/>
 
       <OptionList optionsList={options}/>
+
+      <ActionButtons onClear={() =>setOptions([])} onSort={() => 
+        {
+          const randomSorted = Math.floor(Math.random() * options.length);
+          setSorted(options[randomSorted].name);
+          console.log(sorted)
+          alert(sorted)
+      }}/>
     </>
   )
 }
