@@ -1,21 +1,22 @@
 import {useState} from 'react'
 
 function OptionInput({onAddOption}) {
-    const [texto, setTexto] = useState('')
+    const [option, setOption] = useState('')
 
     function handleSubmit (e) {
         e.preventDefault();
-        if (texto.trim() === ''){
+        if (option.trim() === ''){
+            alert("Ops, digite alguma coisa!")
             return
         }
         
-        onAddOption(texto)
-        setTexto('');
+        onAddOption(option)
+        setOption('');
     }
 
     return (
     <form onSubmit={handleSubmit}>
-      <input type="text"  value={texto} onChange={(e) => setTexto(e.target.value)}/>
+      <input type="text"  value={option} onChange={(e) => setOption(e.target.value)}/>
       <button type="submit">Adicionar</button>
     </form>
     )
