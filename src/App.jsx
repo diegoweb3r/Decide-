@@ -14,6 +14,7 @@ function App() {
   return (
     <>
       <Header />
+      
       <OptionInput onAddOption={(newOption) =>  {
         const option = {
           id: crypto.randomUUID(),
