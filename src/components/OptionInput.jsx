@@ -9,7 +9,7 @@ function OptionInput({onAddOption}) {
             alert("Ops, digite alguma coisa!")
             return
         }
-        
+    
         onAddOption(option)
         setOption('');
     }
@@ -21,5 +21,6 @@ function OptionInput({onAddOption}) {
     </form>
     )
 }
+
 
 export default OptionInput  

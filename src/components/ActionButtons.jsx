@@ -2,7 +2,7 @@
 function ActionButtons({onClear, onSort}){
 
     function handleSort (){
-        alert("Opa! clicou no sortear")
+        alert("Opa! clicou no sortear");
         onSort();
     }
 
