@@ -26,15 +26,19 @@ function App() {
 
       <ActionButtons onClear={() => {setOptions([])}} onSort={() => 
         {  
-          const randomSorted = Math.floor(Math.random() * options.length);
-          setSorted(options[randomSorted].name);
+          
+          if(options.length > 0) {
+            const randomSorted = Math.floor(Math.random() * options.length);
+            setSorted(options[randomSorted].name);
+          } else{
+            setSorted("Não há opções para sortear!");
+        }
       }}/>
 
-      {sorted.length > 0 && <ModalResults sorted={sorted}/>}
+      {sorted.length > 0 && <ModalResults sorted={sorted} closeModal={() => {setSorted("")}}/>}
     </>
   )
 }
 
-//arrumar os botoes de action
 
 export default App
