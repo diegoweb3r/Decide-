@@ -5,6 +5,7 @@ import './styles/header.css'
 import './styles/optionInput.css'
 import './styles/optionList.css'
 import './styles/actionButtons.css'
+import './styles/modalResult.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(

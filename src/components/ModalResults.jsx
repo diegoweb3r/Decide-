@@ -4,10 +4,13 @@ function ModalResults({sorted, closeModal}){
     }
 
     return(
-        <div className="modal">
-            <button onClick={closeModalButton}className="closeButton">X</button>
-            <h2>Resultado do sorteio</h2>
-            <p>O resultado sorteado foi: {sorted}</p>
+        <div className="modalOverlay">
+            <div className="modal">
+                <button onClick={closeModalButton}className="closeModalButton">❌</button>
+                <h2>Resultado do sorteio</h2>
+                <p>O resultado sorteado foi:</p>
+                <p className="bold">✨ {sorted} ✨</p>
+            </div>
         </div>
     )
 }
