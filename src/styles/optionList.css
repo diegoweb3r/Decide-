@@ -1,0 +1,40 @@
+.emptyList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    margin: 1rem 0 2rem 0;
+    
+}
+
+.emptyIcon{
+    font-size: 70px;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.optionItem{
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2rem;
+    transition: all ease .5s ;
+}
+
+.optionItem button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+li:has(button:hover) {
+  background-color: var(--text);
+  color: var(--background);
+}

@@ -15,9 +15,9 @@ function OptionInput({onAddOption}) {
     }
 
     return (
-    <form onSubmit={handleSubmit}>
-      <input type="text"  value={option} onChange={(e) => setOption(e.target.value)}/>
-      <button type="submit">Adicionar</button>
+    <form id="optionInputForm" onSubmit={handleSubmit}>
+      <input className="optionInput" type="text"  value={option} onChange={(e) => setOption(e.target.value)}/>
+      <button className="addOptionButton" type="submit">Adicionar</button>
     </form>
     )
 }

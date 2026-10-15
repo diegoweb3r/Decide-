@@ -3,13 +3,13 @@ function OptionList({optionsList}){
     return(
         optionsList.length === 0 ? 
         <div className="emptyList">
-            <img src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png" alt="emptyList" />
-            <p>Não há opções cadastradas</p> 
-            <p>Adicione opções para que seja possível realizar o sorteio</p>
+            <p className="emptyIcon">📂</p>
+            <p className="warningEmpty">Não há opções cadastradas</p> 
+            <p className="warningEmpty">Adicione opções para que seja possível realizar o sorteio</p>
             </div> : 
             <ul>
             {optionsList.map((option) =>(
-                <li key={option.id}>{option.name}</li>
+                <li className="optionItem" key={option.id}>{option.name} <button className="deleteItenButton">❌</button></li>
             ) )}
         </ul>
     )

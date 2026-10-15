@@ -1,0 +1,22 @@
+.actionButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actionButtons button{
+    width: 35%;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all ease 1s;
+    height: 2rem;
+}
+
+.actionButtons button:hover{
+    background-color: var(--primary);
+    color: var(--background);
+    width: 40%;
+}

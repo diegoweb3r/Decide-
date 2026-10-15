@@ -1,0 +1,28 @@
+#optionInputForm{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.optionInput{
+    width: 80%;
+    height: 2rem;
+    border-radius: 8px;
+    padding: .8rem;
+}
+
+.addOptionButton{
+    width: 20%;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+.addOptionButton:hover{
+    background-color: var(--primary);
+    color: var(--background);
+    width: 25%;
+}

@@ -1,0 +1,17 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.logo{
+    font-size: 50px;
+}
+
+.title{
+    font-family: 'Bitcount Ink', sans-serif;
+    font-size: 75px;
+    font-weight:bold;
+}
